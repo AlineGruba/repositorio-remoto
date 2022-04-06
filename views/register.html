@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenidxs a MercadoLiebre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="top-header">
+            <div class="logo">
+                <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+            </div>
+            <div class="form" action="#" method="GET">
+                <div class="input">Buscar</div>
+                <div class="submit"><i class="fa fa-search"></i></div>
+            </div>
+            <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul>
+                <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <i class="fa fa-bars burger"></i>
+        </div>
+    </header>
+    <form action="action_page.php">
+        <div class="container">
+            <h1>Registro</h1>
+            <hr>
+
+            <label for="nombre-apellido"><b>Nombre y apellido</b></label>
+            <input type="text" placeholder="Nombre y apellido" name="nombre" id="nombre" required>
+
+            <label for="nacimiento"><b>Fecha de nacimiento</b></label>
+            <input type="date" placeholder="Fecha de nacimiento" name="nacimiento" id="nacimiento" required>
+
+            </br>
+            </br>
+            <label for="domicilio"><b>Domicilio</b></label>
+            <input type="text" placeholder="Domicilio" name="domicilio" id="domicilio" required>
+
+
+            </br>
+            <div class="interes">
+                <label for="perfil"><b>Perfil del usuario</b></label>
+                </br>
+                <input name="intereses" type="radio" value="comprar" />Comprar
+                <input name="intereses" type="radio" value="vender" />Vender
+            </div>
+
+
+            <div class="categoria">
+                <label for="categoria"><b>Categorías de interés (puede elegir más de una) </b></label>
+                <br />
+                <input name="electro" type="checkbox" />Electro
+                <br />
+                <input name="moda" type="checkbox" />Moda
+                <br />
+                <input name="hogar" type="checkbox" />Hogar
+                <br />
+                <input name="jugueteria" type="checkbox" />Juguetería
+                <br />
+                <input name="vidasana" type="checkbox" />Vida Sana
+                </br>
+            </div>
+
+            <label for="psw"><b>Contraseña </b></label>
+            <input type="password" placeholder="Contraseña" name="psw" id="psw" required>
+
+            </br>
+            <label for="psw-repeat"><b>Confirmar contraseña</b></label>
+            <input type="password" placeholder="Confirmar contraseña" name="psw-repeat" id="psw-repeat" required>
+            <hr>
+
+            <div class="botones">
+                <button type="submit" class="registerbtn">Enviar</button>
+                <button type="submit" class="registerbtn">Borrar</button>
+            </div>
+
+        </div>
+
+        <!-- div class="container signin">
+          <p>Already have an account? <a href="#">Sign in</a>.</p>
+        </div -->
+    </form>
+
+</body>
+
+</html>

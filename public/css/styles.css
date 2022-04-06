@@ -1,0 +1,383 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+div.top-header {
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+    align-items: flex-end;;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+header div.logo{
+    width: 40%;
+    padding: 10px;
+}
+
+header nav{
+    font-size: 12px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+    padding-left: 20px;
+}
+
+header .form{
+    width: 50%;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid rgb(0 0 0 / 5%);
+    border-radius: 5px;
+    outline: none;
+    color: #bcbbbb;
+    padding: 8px;
+}
+
+header .form .submit{
+    background-color: #FFF;
+    /*border: 1px solid #000;*/
+    color: #666;
+    width: 10%;
+    position: relative;
+    top: -30px;
+    left: 85%;
+
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    /*height: 40px;*/
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    /*width: 40px;*/
+}
+
+.price{
+    font-size: 18px;
+    padding-right: 05px;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.discount {
+    flex:35%;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+    margin-bottom: 05px;
+    width: 100%;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 10px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article .main-article{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding-left: 15px;
+}
+
+.main-article {
+    display: flex;
+}
+
+.main-article i {
+    display: flex;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 78%;
+    top: -25px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    display: flex;
+    align-items: baseline;
+    position: relative;
+}
+
+/*STAR REGISTRO*/
+/* Add padding to containers */
+.container {
+    padding: 16px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  input {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+
+ input[type=radio] {
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  .interes input {
+      padding-right: 20px;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  input[type="date" i] {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  input[type="checkbox" i] {
+    font-family: 'Roboto', sans-serif;
+}
+
+  .categoria {
+      margin-bottom: 20px;
+      font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+
+  .botones {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: #0439aa;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }
+  
+  /* Add a blue text color to links */
+  a {
+    color: dodgerblue;
+  }
+  
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+
+  /*END REGISTRO*/
+
+
+
+/*START MEDIA QUERY*/
+
+@media (max-width: 480px){
+    .products {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px){
+    header nav{
+        display: none;
+    }
+    
+    main section article .description{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 35%;
+    }
+
+    /*smain section article .main-article{
+        padding-left: 45px;
+    }*/
+
+    .products {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    }
+
+@media (min-width: 769px){
+    header nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 15px;
+    }
+
+    header nav ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-around;
+        align-items: center;
+        }
+    
+    main section article{
+        width: 22%;
+    }
+
+    div.top-header {
+        padding: 5%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: flex-end;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    header div.top-header p {
+        margin-top: 0px;
+        width: 60%;
+    }
+
+    header .form .input {
+        padding: 0px;
+    }
+
+    header .form .submit {
+        top: -20px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .products {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    main section article .description {
+        display: block;
+    }
+}
