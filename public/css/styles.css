@@ -287,6 +287,10 @@ article div.main-article{
 /*START MEDIA QUERY*/
 
 @media (max-width: 480px){
+    header nav{
+        display: none;
+    }
+
     .products {
         display: flex;
         justify-content: space-evenly;
