@@ -41,7 +41,7 @@
         </div>
     </header>
 
-    <form action="action_page.php">
+    <form class="forms" action="action_page.php">
         <div class="container">
             <h1>Creá tu cuenta</h1>
             <hr>
@@ -53,26 +53,27 @@
             <input type="text" placeholder="Nombre de usuari@" name="nombreusuario" id="nombreusuario" required>
 
             <label for="nacimiento"><b>Fecha de nacimiento</b></label>
-            <input type="date" placeholder="Fecha de nacimiento" name="nacimiento" id="nacimiento" required>
-
+            <div class="nacimiento">
+                <input type="date" placeholder="Fecha de nacimiento" name="nacimiento" id="nacimiento" required>
+                </div>
             </br>
             </br>
             <label for="domicilio"><b>Domicilio</b></label>
             <input type="text" placeholder="Domicilio" name="domicilio" id="domicilio" required>
 
-
             </br>
             <div class="interes">
                 <label for="perfil"><b>Perfil del usuario</b></label>
-                </br>
+                <div class="perfil2">
                 <input name="intereses" type="radio" value="comprar" />Comprar
                 <input name="intereses" type="radio" value="vender" />Vender
+            </div>
             </div>
 
 
             <div class="categoria">
                 <label for="categoria"><b>Categorías de interés (puede elegir más de una) </b></label>
-                <br />
+                <div class="interes2">
                 <input name="electro" type="checkbox" />Electro
                 <br />
                 <input name="moda" type="checkbox" />Moda
@@ -84,6 +85,7 @@
                 <input name="vidasana" type="checkbox" />Vida Sana
                 </br>
             </div>
+            </div>
 
             <label for="psw"><b>Contraseña </b></label>
             <input type="password" placeholder="Contraseña" name="psw" id="psw" required>
@@ -94,8 +96,8 @@
             <hr>
 
             <div class="botones">
-                <button type="submit" class="registerbtn">Enviar</button>
-                <button type="submit" class="registerbtn">Borrar</button>
+                <a href="/"><button type="button" class="registerbtn">Enviar</button></a>
+                <button type="reset" class="registerbtn">Borrar</button>
             </div>
 
         </div>

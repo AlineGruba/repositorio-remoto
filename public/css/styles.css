@@ -163,8 +163,6 @@ main section article i,
 main section article i{
     font-size: 16px;
     padding: 5px;
-    width: 30px;
-    height: 30px;
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
@@ -174,8 +172,22 @@ main section article i{
     flex-wrap: wrap;
     position: absolute;
     left: 78%;
-    top: -25px;
+    top: -15px;
 }
+
+main section article:hover {
+    box-shadow: 0 0 10px rgb(100 100 100);
+}
+
+main section article:hover i {
+    transform: rotate(-90deg);
+    transition-duration: 450ms;
+}
+
+
+main section article:hover .description {
+    display: block;
+  }
 
 main section h3{
     margin: 20px 0px;
@@ -191,9 +203,21 @@ article div.main-article{
 
 /*STAR REGISTRO*/
 /* Add padding to containers */
-.container {
+.forms {
+    display: flex;
+    width: 100%;
+    /* margin: 0 250px; */
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.forms .container {
     padding: 16px;
     background-color: white;
+    width: 50%;
   }
   
   /* Full-width input fields */
@@ -202,42 +226,70 @@ article div.main-article{
   }
 
   input[type=text], input[type=password] {
-    width: 100%;
+    width: 90%;
     padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;
     border: none;
     background: #f1f1f1;
+    background-image: none !important;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 16px 18px;
+    background-position: 98% 50%;
+    cursor: auto;
   }
 
  input[type=radio] {
     padding: 15px;
-    margin: 5px 0 22px 0;
     display: inline-block;
     border: none;
     background: #f1f1f1;
+    margin-left: 30px;
   }
 
-  .interes input {
-      padding-right: 20px;
-  }
+  .interes .perfil2 {
+    font-size: 14px;
+    color: rgb(95, 95, 95);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 30%;
+}
   
   input[type=text]:focus, input[type=password]:focus {
     background-color: #ddd;
     outline: none;
   }
 
+  input[type="date"] {
+    justify-items: center;
+  }
+
   input[type="date" i] {
-    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color:rgb(95, 95, 95)
   }
 
   input[type="checkbox" i] {
-    font-family: 'Roboto', sans-serif;
-}
+        margin-right: 10px;
+        margin-top: 10px;
+  }
+
+  /*input[type="radio" i] {
+    /* font-family: 'Roboto', sans-serif; 
+    margin-right: 10px;
+}*/
 
   .categoria {
-      margin-bottom: 20px;
+    margin: 20px 0;
       font-family: 'Roboto', sans-serif;
+  }
+
+  .categoria .interes2 {
+    font-size: 14px;
+    color:rgb(95, 95, 95)
   }
   
   /* Overwrite default styles of hr */
@@ -249,9 +301,12 @@ article div.main-article{
   .botones {
       display: flex;
       flex-direction: column;
-      align-items: center;
       flex-wrap: wrap;
   }
+
+  .botones :hover {
+    background-color: #0022AA;
+}
   
   /* Set a style for the submit button */
   .registerbtn {
@@ -261,17 +316,18 @@ article div.main-article{
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 50%;
     opacity: 0.9;
   }
   
-  .registerbtn:hover {
-    opacity: 1;
-  }
   
   /* Add a blue text color to links */
-  a {
+  .botones a {
     color: dodgerblue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-decoration: none;
   }
   
   /* Set a grey background color and center the text of the "sign in" section */
@@ -296,16 +352,16 @@ article div.main-article{
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
+
+    .forms .container {
+        width: 90%;
+      }
 }
 
 
 @media (min-width: 481px) and (max-width: 768px){
     header nav{
         display: none;
-    }
-    
-    main section article .description{
-        display: block;
     }
 
     main section article{
@@ -381,7 +437,4 @@ article div.main-article{
         flex-wrap: wrap;
     }
 
-    main section article .description {
-        display: block;
-    }
 }
