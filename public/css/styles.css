@@ -255,7 +255,7 @@ article div.main-article{
     align-items: center;
     justify-content: space-between;
     margin-top: 10px;
-    width: 30%;
+    width: 20%;
 }
   
   input[type=text]:focus, input[type=password]:focus {
@@ -299,14 +299,15 @@ article div.main-article{
   }
 
   .botones {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
-  .botones :hover {
+  /*.botones :hover {
     background-color: #0022AA;
-}
+}*/
   
   /* Set a style for the submit button */
   .registerbtn {
@@ -318,17 +319,28 @@ article div.main-article{
     cursor: pointer;
     opacity: 0.9;
   }
+
+  .registerbtn :hover {
+    background-color: #0022AA;
+}
   
-  
-  /* Add a blue text color to links */
-  .botones a {
+  .registerbtn a {
     color: dodgerblue;
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     text-decoration: none;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0.9;
   }
+
+  .registerbtn a:hover {
+    background-color: #0022AA;
+    width: 80%;
+    height: 60px;
+}
   
   /* Set a grey background color and center the text of the "sign in" section */
   .signin {
@@ -377,6 +389,10 @@ article div.main-article{
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+    }
+
+    .forms .container {
+        width: 80%;
     }
     }
 
