@@ -251,6 +251,10 @@ footer .design-footer h3 {
     font-size: 16px;
 }
 
+.info-footer .fas {
+    font-size: 2em !important;
+}
+
 div.info-footer i:hover {
     color: rgba(91, 128, 230, 0.397);
 }
